@@ -66,13 +66,17 @@ header .header-container .header-nav .header-ul li a .header-link-display span {
   margin-right: 0.7em;
 }
 
-header .header-container .date-profile-container {
+header .header-container .profile-parent {
+  position: relative;
+}
+
+header .header-container .profile-parent .date-profile-container {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-header .header-container .date-profile-container .header-date-container {
+header .header-container .profile-parent .date-profile-container .header-date-container {
   margin-right: 0.5em;
   background: #2D2D3A;
   border-radius: 8px;
@@ -82,7 +86,7 @@ header .header-container .date-profile-container .header-date-container {
   padding: 0.4em;
 }
 
-header .header-container .date-profile-container .header-date-container .plus-btn {
+header .header-container .profile-parent .date-profile-container .header-date-container .plus-btn {
   font-size: 14px;
   line-height: 18px;
   align-items: center;
@@ -97,16 +101,16 @@ header .header-container .date-profile-container .header-date-container .plus-bt
   border-radius: 8px;
 }
 
-header .header-container .date-profile-container .header-date-container .date-container {
+header .header-container .profile-parent .date-profile-container .header-date-container .date-container {
   display: flex;
   align-items: center;
 }
 
-header .header-container .date-profile-container .header-date-container .date-container span {
+header .header-container .profile-parent .date-profile-container .header-date-container .date-container span {
   margin: 0px 5px 0px 10px;
 }
 
-header .header-container .date-profile-container .header-profile-container {
+header .header-container .profile-parent .date-profile-container .header-profile-container {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -114,28 +118,28 @@ header .header-container .date-profile-container .header-profile-container {
 }
 
 @media screen and (min-width: 1200px) {
-  header .header-container .date-profile-container .header-profile-container {
+  header .header-container .profile-parent .date-profile-container .header-profile-container {
     display: block;
   }
 }
 
 @media screen and (min-width: 900px) {
-  header .header-container .date-profile-container .header-profile-container {
+  header .header-container .profile-parent .date-profile-container .header-profile-container {
     display: block;
   }
 }
 
-header .header-container .date-profile-container .header-profile-container .profile-container-display {
+header .header-container .profile-parent .date-profile-container .header-profile-container .profile-container-display {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
 
-header .header-container .date-profile-container .header-profile-container .profile-container-display span {
+header .header-container .profile-parent .date-profile-container .header-profile-container .profile-container-display span {
   margin: 0 0.7em;
 }
 
-header .header-container .date-profile-container .header-profile-container .profile-container-display .drop-down {
+header .header-container .profile-parent .date-profile-container .header-profile-container .profile-container-display .drop-down {
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -147,5 +151,16 @@ header .header-container .date-profile-container .header-profile-container .prof
   justify-content: center;
   padding: 0;
   outline: none;
+  padding: 0.5em;
+  transition: linear 400ms;
+}
+
+header .header-container .profile-parent .date-profile-container .header-profile-container .profile-container-display .drop-down img {
+  transition: linear 400ms;
+}
+
+header .header-container .profile-parent .date-profile-container .header-profile-container .profile-container-display .drop-down .drop-image {
+  transform: rotate(180deg);
+  transition: linear 400ms;
 }
 /*# sourceMappingURL=header.css.map */

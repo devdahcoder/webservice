@@ -112,76 +112,94 @@ header {
         }
     
     
-        .date-profile-container {
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-
-            .header-date-container {
-                margin-right: 0.5em;
-                background: #2D2D3A;
-                border-radius: 8px;
+        .profile-parent {
+            position: relative;
+            .date-profile-container {
                 display: flex;
                 align-items: center;
                 flex-direction: row;
-                padding: 0.4em;
-        
-                .plus-btn {
-                    font-size: 14px;
-                    line-height: 18px;
-                    align-items: center;
-                    background: 0 0;
-                    border: 0;
-                    cursor: pointer;
-                    display: flex;
-                    justify-content: center;
-                    padding: 0.4em;
-                    outline: none;
-                    background: #4447E2;
-                    border-radius: 8px;
-                    
-                }
-        
-                .date-container {
-                    display: flex;
-                    align-items: center;
-        
-                    span {
-                        margin: 0px 5px 0px 10px;
     
-                    }
-                }
-            }
-
-            .header-profile-container {
-                display: flex;
-                align-items: center;
-                flex-direction: row;
-                display: none;
-
-                @include response(desktop) {
-                    display: block;
-                }
-
-                @include response(tablet) {
-                    display: block;
-                }
-
-                .profile-container-display {
+                .header-date-container {
+                    margin-right: 0.5em;
+                    background: #2D2D3A;
+                    border-radius: 8px;
                     display: flex;
                     align-items: center;
                     flex-direction: row;
+                    padding: 0.4em;
+            
+                    .plus-btn {
+                        font-size: 14px;
+                        line-height: 18px;
+                        align-items: center;
+                        background: 0 0;
+                        border: 0;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        padding: 0.4em;
+                        outline: none;
+                        background: #4447E2;
+                        border-radius: 8px;
+                        
+                    }
+            
+                    .date-container {
+                        display: flex;
+                        align-items: center;
+            
+                        span {
+                            margin: 0px 5px 0px 10px;
+        
+                        }
+                    }
+                }
+    
+                .header-profile-container {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    display: none;
+                    
 
-                    span {
-                        margin: 0 0.7em;
+                    @include response(desktop) {
+                        display: block;
                     }
 
 
-                    .drop-down {
-                        @include svg-btn();
+                    @include response(tablet) {
+                        display: block;
+                    }
+    
+                    .profile-container-display {
+                        display: flex;
+                        align-items: center;
+                        flex-direction: row;
+    
+                        span {
+                            margin: 0 0.7em;
+                        }
+    
+    
+                        .drop-down {
+                            @include svg-btn();
+                            padding: 0.5em;
+                            transition: linear 400ms;
+                            img {
+                                transition: linear 400ms;
+                            }
+
+                            .drop-image {
+                                transform: rotate(180deg);
+                                transition: linear 400ms;
+                            }
+                        }
                     }
                 }
             }
+
+
+            
         }
         
     }
