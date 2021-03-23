@@ -1,0 +1,151 @@
+header {
+  background-color: #1C1C24;
+  padding: 1em 0px;
+  width: 100%;
+}
+
+header .header-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-container .logo-container a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+header .header-container .logo-container a .logo {
+  height: 100%;
+  width: 100%;
+}
+
+header .header-container .header-nav {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  header .header-container .header-nav {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header .header-container .header-nav {
+    display: block;
+  }
+}
+
+header .header-container .header-nav .header-ul {
+  list-style: none;
+}
+
+header .header-container .header-nav .header-ul li {
+  display: inline-block;
+  padding: 0px 1.5em;
+}
+
+header .header-container .header-nav .header-ul li a {
+  text-decoration: none;
+  color: #5F5F6E;
+  cursor: pointer;
+}
+
+header .header-container .header-nav .header-ul li a:hover, header .header-container .header-nav .header-ul li a:active {
+  color: #FFFFFF;
+}
+
+header .header-container .header-nav .header-ul li a .header-link-display {
+  display: flex;
+  align-items: center;
+}
+
+header .header-container .header-nav .header-ul li a .header-link-display span {
+  margin-right: 0.7em;
+}
+
+header .header-container .date-profile-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+header .header-container .date-profile-container .header-date-container {
+  margin-right: 0.5em;
+  background: #2D2D3A;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.4em;
+}
+
+header .header-container .date-profile-container .header-date-container .plus-btn {
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0.4em;
+  outline: none;
+  background: #4447E2;
+  border-radius: 8px;
+}
+
+header .header-container .date-profile-container .header-date-container .date-container {
+  display: flex;
+  align-items: center;
+}
+
+header .header-container .date-profile-container .header-date-container .date-container span {
+  margin: 0px 5px 0px 10px;
+}
+
+header .header-container .date-profile-container .header-profile-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  header .header-container .date-profile-container .header-profile-container {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  header .header-container .date-profile-container .header-profile-container {
+    display: block;
+  }
+}
+
+header .header-container .date-profile-container .header-profile-container .profile-container-display {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+header .header-container .date-profile-container .header-profile-container .profile-container-display span {
+  margin: 0 0.7em;
+}
+
+header .header-container .date-profile-container .header-profile-container .profile-container-display .drop-down {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+}
+/*# sourceMappingURL=header.css.map */

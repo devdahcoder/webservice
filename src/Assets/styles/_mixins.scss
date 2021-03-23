@@ -1,0 +1,28 @@
+/*
+MEDIA QUERY
+size : phone = 600px;
+size : tablet = 900px;
+size : Desktop = 1200px;
+*/
+
+
+
+@mixin response($size) {
+    // @if $size == phone {
+    //     @media screen and (max-width: 600px) {
+    //         @content
+    //     }
+    // }
+
+    @if $size == tablet {
+        @media screen and (min-width: 900px) {
+            @content
+        }
+    }
+
+    @if $size == desktop {
+        @media screen and (min-width: 1200px) {
+            @content
+        }
+    }
+}
