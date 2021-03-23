@@ -1,22 +1,28 @@
 .profile-dropdown {
-  position: absolute;
-  cursor: pointer;
-  min-width: 190px;
-  max-width: 190px;
   list-style: none;
-  top: 50px;
   background: #1C1C24;
-  border: 1px solid #2D2D3A;
-  border-radius: 7px;
   filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.07)), drop-shadow(0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198)), drop-shadow(0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275)), drop-shadow(0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035)), drop-shadow(0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725)), drop-shadow(0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802));
   transform-origin: top center;
   animation: scale 600ms ease-in-out forwards;
-  display: none;
+}
+
+@media screen and (max-width: 899px) {
+  .profile-dropdown {
+    height: 100vh;
+    width: 100%;
+    padding: 5em 0;
+  }
 }
 
 @media screen and (min-width: 900px) {
   .profile-dropdown {
     display: block;
+    min-width: 190px;
+    max-width: 190px;
+    position: absolute;
+    top: 50px;
+    border-radius: 7px;
+    border: 1px solid #2D2D3A;
   }
 }
 
@@ -34,6 +40,19 @@
   }
 }
 
+.profile-dropdown .drop-down-header {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 20px;
+  padding: 1.1em 0.6em;
+}
+
+@media screen and (min-width: 900px) {
+  .profile-dropdown .drop-down-header {
+    display: none;
+  }
+}
+
 .profile-dropdown .drop-down-li {
   display: flex;
   align-items: center;
@@ -47,7 +66,7 @@
   text-decoration: none;
   color: #ffffff;
   font-size: 15px;
-  padding: 0.8em 0.6em;
+  padding: 1.5em 0.6em;
   width: 100%;
 }
 
@@ -79,8 +98,14 @@
   text-decoration: none;
   color: #ffffff;
   font-size: 15px;
-  padding: 0.6em;
+  padding: 1.1em 0.6em;
   width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .profile-dropdown .drop-down-li a {
+    padding: 0.6em;
+  }
 }
 
 .profile-dropdown .drop-down-li a:hover {
@@ -105,5 +130,23 @@
 
 .profile-dropdown .drop-down-li a .drop-down-display .drop-down-icon-container span img {
   vertical-align: middle;
+}
+
+.profile-dropdown .drop-down-footer {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 2em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #5F5F6F;
+}
+
+@media screen and (min-width: 900px) {
+  .profile-dropdown .drop-down-footer {
+    display: none;
+  }
 }
 /*# sourceMappingURL=DropDown.css.map */

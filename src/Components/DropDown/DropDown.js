@@ -18,6 +18,11 @@ const DropDown = () => {
     
     return (
         <ul className="profile-dropdown">
+            <div className="drop-down-header">
+                <p>
+                    Menu
+                </p>
+            </div>
             <li className="drop-down-li">
                 <a href="/">
                     <div className="drop-down-display">
@@ -73,6 +78,9 @@ const DropDown = () => {
                     </div>
                 </a>
             </li>
+            <div className="drop-down-footer">
+                <p>© 2020 - All Rights Licensed</p>
+            </div>
         </ul>
     )
 }

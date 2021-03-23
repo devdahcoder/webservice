@@ -1,3 +1,7 @@
 .app {
-  height: 100vh;
+  background: #1C1C24;
+  height: 100%;
+  /* padding: 5em 0; */
+  /* overflow-y: scroll; */
 }
+

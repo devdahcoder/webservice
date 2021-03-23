@@ -8,7 +8,7 @@ import Faq from "../../Assets/images/faq.svg";
 import Menu from "../../Assets/images/menu.svg"
 
 
-const MobileMenu = () => {
+const MobileMenu = ({onClickDrop}) => {
     return (
         <div className="mobile-menu-container">
             <nav className="mobile-menu-nav">
@@ -47,7 +47,7 @@ const MobileMenu = () => {
                         </a>
                     </li>
                     <li className="mobile-menu-li">
-                        <a href="/">
+                        <div className="drop-link" onClick={onClickDrop}>
                             <div className="mobile-menu-display">
                                 <span>
                                     <img src={Menu} alt="menu"/>
@@ -55,7 +55,7 @@ const MobileMenu = () => {
 
                                 <p>Menu</p>
                             </div>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </nav>

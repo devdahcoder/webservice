@@ -1,9 +1,11 @@
 .mobile-menu-container {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   z-index: 1;
   width: 100%;
+  border-top: 1px solid #5F5F6F;
+  background: #1C1C24;
 }
 
 @media screen and (min-width: 900px) {
@@ -16,12 +18,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .mobile-menu-container .mobile-menu-nav .mobile-menu-ul {
   list-style: none;
-  border-top: 1px solid #5F5F6F;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,19 +36,22 @@
   text-align: center;
 }
 
-.mobile-menu-container .mobile-menu-nav .mobile-menu-ul .mobile-menu-li a {
+.mobile-menu-container .mobile-menu-nav .mobile-menu-ul .mobile-menu-li a,
+.mobile-menu-container .mobile-menu-nav .mobile-menu-ul .mobile-menu-li .drop-link {
   color: white;
   text-decoration: none;
   cursor: pointer;
-  font-size: 10px;
+  font-size: 0.8em;
 }
 
-.mobile-menu-container .mobile-menu-nav .mobile-menu-ul .mobile-menu-li a .mobile-menu-display {
+.mobile-menu-container .mobile-menu-nav .mobile-menu-ul .mobile-menu-li a .mobile-menu-display,
+.mobile-menu-container .mobile-menu-nav .mobile-menu-ul .mobile-menu-li .drop-link .mobile-menu-display {
   display: block;
   text-align: center;
 }
 
-.mobile-menu-container .mobile-menu-nav .mobile-menu-ul .mobile-menu-li a .mobile-menu-display p {
+.mobile-menu-container .mobile-menu-nav .mobile-menu-ul .mobile-menu-li a .mobile-menu-display p,
+.mobile-menu-container .mobile-menu-nav .mobile-menu-ul .mobile-menu-li .drop-link .mobile-menu-display p {
   margin-top: 0.5em;
 }
 /*# sourceMappingURL=mobilemenu.css.map */
