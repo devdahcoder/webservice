@@ -4,7 +4,7 @@ import "./button.css"
 
 const Button = ({children}) => {
     return (
-        <div>
+        <div className="home-list-button-container">
             <button>
                 {children}
             </button>

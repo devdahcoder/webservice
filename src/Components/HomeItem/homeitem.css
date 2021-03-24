@@ -1,0 +1,99 @@
+.home-list-container {
+  width: 100%;
+}
+
+.home-list-container .home-list-li {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  background: #2D2D3A;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.home-list-container .home-list-li .home-list-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home-list-container .home-list-li .home-list-header .home-list-profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-list-container .home-list-li .home-list-header .home-list-profile-container span {
+  margin-right: 0.6em;
+}
+
+.home-list-container .home-list-li .home-list-header .home-list-profile-container .home-list-profile-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.home-list-container .home-list-li .home-list-header .home-list-profile-container .home-list-profile-detail p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+  overflow: hidden;
+}
+
+.home-list-container .home-list-li .home-list-header .home-list-profile-container .home-list-profile-detail .home-list-profile-name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.home-list-container .home-list-li .home-list-header .home-list-profile-container .home-list-profile-detail .home-list-profile-content {
+  font-size: 12px;
+  line-height: 17px;
+  color: #5F5F6E;
+}
+
+.home-list-container .home-list-li .home-list-header .home-list-menu {
+  margin-left: auto;
+}
+
+.home-list-container .home-list-li .home-list-header .home-list-menu button {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+}
+
+.home-list-container .home-list-li .home-list-image-container {
+  width: 100%;
+  display: block;
+  margin: 0.8em 0;
+}
+
+.home-list-container .home-list-li .home-list-image-container .home-list-image {
+  overflow: hidden;
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.home-list-container .home-list-li .home-list-image-container .home-list-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=homeitem.css.map */

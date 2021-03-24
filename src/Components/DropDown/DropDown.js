@@ -14,8 +14,6 @@ import CheckBox from "../../Components/CheckBox/CheckBox";
 
 const DropDown = () => {
 
-    
-    
     return (
         <ul className="profile-dropdown">
             <div className="drop-down-header">

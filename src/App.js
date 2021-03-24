@@ -5,6 +5,7 @@ import './App.css';
 import Header from "./Components/Header/Header";
 import MobileMenu from "./Components/MobileMenu/MobileMenu";
 import DropDown from "./Components/DropDown/DropDown";
+import Home from "./Pages/Home/Home";
 
 function App() {
 
@@ -23,10 +24,10 @@ function App() {
   return (
     <>
       <Header />
-      <div className="app">
+      <main className="app">
         {drop ? <DropDown /> : ""}
-
-      </div>
+        <Home />
+      </main>
       <MobileMenu onClickDrop={onClickDrop} />
     </>
   );

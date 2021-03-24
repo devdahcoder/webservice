@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAoBA,AACI,6BADyB,CACzB,mBAAmB,CAAC;EAChB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,qBAAqB,EAAE,cAAc;EACrC,QAAQ,EAAE,GAAG;CAMhB;;AAvBG,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAY3C,AACI,6BADyB,CACzB,mBAAmB,CAAC;IAQZ,qBAAqB,EAAE,cAAc;GAE5C",
+    "sources": [
+        "homedisplay.scss"
+    ],
+    "names": [],
+    "file": "homedisplay.css"
+}

@@ -1,0 +1,33 @@
+@mixin response($size) {
+    @if $size == phone {
+        @media screen and (max-width: 600px) {
+            @content
+        }
+    }
+
+    @if $size == tablet {
+        @media screen and (min-width: 900px) {
+            @content
+        }
+    }
+
+    @if $size == desktop {
+        @media screen and (min-width: 1200px) {
+            @content
+        }
+    }
+}
+
+.home-items-display-container {
+    .home-items-display {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+
+
+        @include response(tablet) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

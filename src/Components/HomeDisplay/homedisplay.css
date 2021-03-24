@@ -1,0 +1,13 @@
+.home-items-display-container .home-items-display {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+@media screen and (min-width: 900px) {
+  .home-items-display-container .home-items-display {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+/*# sourceMappingURL=homedisplay.css.map */

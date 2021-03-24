@@ -1,1 +1,16 @@
-/* No CSS *//*# sourceMappingURL=button.css.map */
+.home-list-button-container button {
+  width: 100%;
+  border-radius: 15px;
+  border: 1px solid #4447E2;
+  background: #1C1C24;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  height: 3em;
+}
+
+.home-list-button-container button:hover, .home-list-button-container button:active {
+  background: #4447E2;
+}
+/*# sourceMappingURL=button.css.map */

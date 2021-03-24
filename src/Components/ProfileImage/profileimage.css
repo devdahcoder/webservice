@@ -1,13 +1,14 @@
 .profile-image-container {
+  position: relative;
+}
+
+.profile-image-container .profile-image-span {
   -webkit-text-size-adjust: 100%;
   color: rgba(var(--i1d, 38, 38, 38), 1);
   white-space: nowrap;
-  margin: 0;
-  padding: 0;
-  border: 0;
   font: inherit;
   vertical-align: baseline;
-  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  background: #2D2D3A;
   border-radius: 50%;
   box-sizing: border-box;
   display: block;
@@ -19,7 +20,7 @@
   height: 40px;
 }
 
-.profile-image-container .profile-image {
+.profile-image-container .profile-image-span .profile-image {
   -webkit-text-size-adjust: 100%;
   color: rgba(var(--i1d, 38, 38, 38), 1);
   white-space: nowrap;
@@ -32,5 +33,25 @@
   vertical-align: baseline;
   height: 100%;
   width: 100%;
+}
+
+.profile-image-container .profile-image-icon {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  bottom: 4px;
+  right: -3px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #2D2D3A;
+}
+
+.profile-image-container .profile-image-icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
 }
 /*# sourceMappingURL=profileimage.css.map */
