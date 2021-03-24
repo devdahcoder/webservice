@@ -1,0 +1,17 @@
+.profile-container {
+  padding: 5em 0;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile-container .profile-display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.profile-container .profile-display .profile-file-container .profile-file-display {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+/*# sourceMappingURL=profile.css.map */

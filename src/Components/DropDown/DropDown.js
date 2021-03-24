@@ -52,7 +52,7 @@ const DropDown = () => {
                     <div className="drop-down-display">
                         <div className="drop-down-icon-container">
                             <span>
-                                <img src={LightMode} alt="theme-icon"/>
+                                <img src={DarkMode} alt="theme-icon"/>
                             </span>
 
                             <p>Light mode</p>

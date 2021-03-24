@@ -113,7 +113,7 @@ const Header = () => {
                                 </span>
 
                                 <div>
-                                    <button onClick={onClickDrop} onBlur={onClickDrop} className="drop-down">
+                                    <button onClick={onClickDrop} /*onBlur={onClickDrop}*/ className="drop-down">
                                         <img className={drop ? "drop-image" : ""} src={DownArrow} alt=""/>
                                     </button>
                                 </div>

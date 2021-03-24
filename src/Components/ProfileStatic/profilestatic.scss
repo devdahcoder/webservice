@@ -1,0 +1,10 @@
+.profile-static-container {
+    width: 100%;
+    .profile-static-display {
+        background: #2D2D3A;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+}

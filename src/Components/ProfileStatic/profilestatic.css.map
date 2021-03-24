@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,yBAAyB,CAAC;EACtB,KAAK,EAAE,IAAI;CAQd;;AATD,AAEI,yBAFqB,CAErB,uBAAuB,CAAC;EACpB,UAAU,EAAE,OAAO;EACnB,aAAa,EAAE,IAAI;EACnB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,cAAc,EAAE,GAAG;CACtB",
+    "sources": [
+        "profilestatic.scss"
+    ],
+    "names": [],
+    "file": "profilestatic.css"
+}

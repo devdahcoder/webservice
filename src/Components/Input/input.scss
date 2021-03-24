@@ -1,0 +1,31 @@
+.input-container {
+    width: 100%;
+
+    .input-display {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+            /* identical to box height, or 143% */
+
+            // display: flex;
+            // align-items: center;
+
+            color: #5F5F6E;
+        }
+
+        input {
+            background: #5F5F6E;
+            border: 1px solid #5F5F6E;
+            padding: 0.5em;
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 17px;
+
+        }
+    }
+}
