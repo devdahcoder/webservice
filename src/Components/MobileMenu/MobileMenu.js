@@ -1,5 +1,9 @@
-import React from 'react'
-import "./mobilemenu.css"
+import React from 'react';
+import "./mobilemenu.css";
+
+
+//imported library
+import { Link } from "react-router-dom";
 
 //imported icons...//
 import Task from "../../Assets/images/task.svg";
@@ -14,7 +18,7 @@ const MobileMenu = ({onClickDrop}) => {
             <nav className="mobile-menu-nav">
                 <ul className="mobile-menu-ul">
                     <li className="mobile-menu-li">
-                        <a href="/">
+                        <Link to="/">
                             <div className="mobile-menu-display">
                                 <span>
                                     <img src={Task} alt="task"/>
@@ -22,10 +26,10 @@ const MobileMenu = ({onClickDrop}) => {
 
                                 <p>Task List</p>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="mobile-menu-li">
-                        <a href="/">
+                        <Link to="news">
                             <div className="mobile-menu-display">
                                 <span>
                                     <img src={News} alt="news"/>
@@ -33,10 +37,10 @@ const MobileMenu = ({onClickDrop}) => {
 
                                 <p>News</p>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="mobile-menu-li">
-                        <a href="/">
+                        <Link to="faq">
                             <div className="mobile-menu-display">
                                 <span>
                                     <img src={Faq} alt="faq"/>
@@ -44,7 +48,7 @@ const MobileMenu = ({onClickDrop}) => {
 
                                 <p>Faq</p>
                             </div>
-                        </a>
+                        </Link>
                     </li>
                     <li className="mobile-menu-li">
                         <div className="drop-link" onClick={onClickDrop}>

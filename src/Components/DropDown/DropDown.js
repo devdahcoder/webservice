@@ -2,6 +2,9 @@ import React from 'react';
 import "./DropDown.css";
 
 
+//imported library
+import { Link } from "react-router-dom";
+
 //imported icons
 import Account from "../../Assets/images/account.svg";
 import Task from "../../Assets/images/task.svg";
@@ -22,7 +25,7 @@ const DropDown = () => {
                 </p>
             </div>
             <li className="drop-down-li">
-                <a href="/">
+                <Link to="/profile">
                     <div className="drop-down-display">
                         <div className="drop-down-icon-container">
                             <span>
@@ -32,10 +35,10 @@ const DropDown = () => {
                             <p>My profile</p>
                         </div>
                     </div>
-                </a>
+                </Link>
             </li>
             <li className="drop-down-li">
-                <a href="/">
+                <Link to="/">
                     <div className="drop-down-display">
                         <div className="drop-down-icon-container">
                             <span>
@@ -45,7 +48,7 @@ const DropDown = () => {
                             <p>Task history</p>
                         </div>
                     </div>
-                </a>
+                </Link>
             </li>
             <li className="drop-down-li mode-li">
                 <div className="mode-link">
@@ -63,7 +66,7 @@ const DropDown = () => {
                 </div>
             </li>
             <li className="drop-down-li">
-                <a href="/">
+                <Link to="/">
                     <div className="drop-down-display">
                         <div className="drop-down-icon-container">
                             <span>
@@ -74,7 +77,7 @@ const DropDown = () => {
                         </div>
                         
                     </div>
-                </a>
+                </Link>
             </li>
             <div className="drop-down-footer">
                 <p>© 2020 - All Rights Licensed</p>

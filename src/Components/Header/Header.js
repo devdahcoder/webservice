@@ -1,6 +1,9 @@
 import React, {useState}  from 'react';
 import "./header.css";
 
+//imported library
+import { Link } from "react-router-dom";
+
 //imported icons...//
 import Coin from "../../Assets/images/header-coin.svg";
 import Logo from "../../Assets/images/logo.png";
@@ -12,8 +15,8 @@ import DownArrow from "../../Assets/images/down-arrow.svg";
 
 
 //imported components...//
-import ProfileImage from "../ProfileImage/ProfileImage"
-import DropDown from "../DropDown/DropDown"
+import ProfileImage from "../ProfileImage/ProfileImage";
+import DropDown from "../DropDown/DropDown";
 
 
 const Header = () => {
@@ -37,16 +40,16 @@ const Header = () => {
             {/* <DropDown /> */}
             <div className="header-container">
                 <div className="logo-container">
-                    <a href="/">
+                    <Link to="/">
                         <img className="logo" src={Logo} alt="website logo"/>
-                    </a>
+                    </Link>
                 </div>
 
 
                 <nav className="header-nav">
                     <ul className="header-ul">
                         <li>
-                            <a href="/">
+                            <Link to="/">
                                 <div className="header-link-display">
                                     <span>
                                         <img src={Task} alt="task-link-logo"/>
@@ -55,10 +58,10 @@ const Header = () => {
 
                                     <p>Task list</p>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/">
+                            <Link to="/news">
                                 <div className="header-link-display">
                                     <span>
                                         <img src={News} alt="news-link-logo"/>
@@ -67,10 +70,10 @@ const Header = () => {
 
                                     <p>News</p>
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/">
+                            <Link to="/help">
                                 <div className="header-link-display">
                                     <span>
                                         <img src={Help} alt="help-link-logo"/>
@@ -79,7 +82,7 @@ const Header = () => {
                                     <p>Help</p>
 
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
@@ -108,9 +111,11 @@ const Header = () => {
 
                         <div className="header-profile-container">
                             <div className="profile-container-display">
-                                <span>
-                                    <ProfileImage />
-                                </span>
+                                <Link className="link-link" to="/profile">
+                                    <div className="span">
+                                        <ProfileImage />
+                                    </div>
+                                </Link>
 
                                 <div>
                                     <button onClick={onClickDrop} /*onBlur={onClickDrop}*/ className="drop-down">

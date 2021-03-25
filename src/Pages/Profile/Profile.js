@@ -2,8 +2,10 @@ import React from 'react';
 import "./profile.css";
 
 //imported components
-import Input from "../../Components/Input/Input"
-import ProfileStatic from "../../Components/ProfileStatic/ProfileStatic"
+import Input from "../../Components/Input/Input";
+import ProfileStatic from "../../Components/ProfileStatic/ProfileStatic";
+
+
 //imported icons 
 import Plus from "../../Assets/images/plus.svg";
 import Dot from "../../Assets/images/dot.svg";
