@@ -40,7 +40,7 @@ function App() {
             {/* <Home /> */}
             {/* <Profile /> */}
 
-            <Route path="/" component={Home} exact />
+            <Route path="/webservice" component={Home} exact />
             <Route path="/profile" component={Profile} />
             <Route path="/news" component={News} />
             <Route path="/faq" component={Faq} />
