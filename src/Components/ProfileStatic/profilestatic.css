@@ -8,5 +8,28 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  padding: 1em;
+}
+
+.profile-static-container .profile-static-display .static-icon-container {
+  margin-right: 1em;
+}
+
+.profile-static-container .profile-static-display .static-detail-container {
+  display: block;
+}
+
+.profile-static-container .profile-static-display .static-detail-container .static-number {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.profile-static-container .profile-static-display .static-detail-container .static-text {
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 125% */
+  display: flex;
+  align-items: center;
+  color: #5F5F6E;
 }
 /*# sourceMappingURL=profilestatic.css.map */

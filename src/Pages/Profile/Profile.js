@@ -2,13 +2,16 @@ import React from 'react';
 import "./profile.css";
 
 //imported components
-import Input from "../../Components/Input/Input";
-import ProfileStatic from "../../Components/ProfileStatic/ProfileStatic";
+import ProfileStaticDisplay from "../../Components/ProfileStaticDisplay/ProfileStaticDisplay";
+import FormDisplay from "../../Components/FormDisplay/FormDisplay";
 
 
 //imported icons 
 import Plus from "../../Assets/images/plus.svg";
 import Dot from "../../Assets/images/dot.svg";
+import Facebook from "../../Assets/images/facebook.svg"
+// import Twitter from "../../Assets/images/twitter.svg"
+// import Vikonet from "../../Assets/images/vkonet.svg"
 
 const Profile = () => {
     return (
@@ -19,14 +22,15 @@ const Profile = () => {
             <div className="profile-display">
                 <div className="profile-file-container">
                     <div className="profile-file-display">
+
                         <div className="profile-file">
-                            <div>
-                                <div>
-                                    <img src="" alt=""/>
+                            <div className="profile-file-image-container">
+                                <div className="profile-file-image-display">
+                                    <img className="profile-file-image" src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""/>
                                 </div>
                             </div>
 
-                            <div>
+                            <div className="profile-file-btn-container">
                                 <button>
                                     <span><img style={{verticalAlign: "middle", marginRight: "0.3em"}} src={Plus} alt=""/></span> Upload new Photo
                                 </button>
@@ -39,27 +43,73 @@ const Profile = () => {
                             </div>
 
                             <div className="social-display">
-                                <div>
-                                    <div>
-                                        <div>
-                                            <img src="" alt=""/>
+                                <div className="social-list">
+                                    <div className="social-list-image-container">
+                                        <div style={{marginRight: "10px"}}>
+                                            <img src={Facebook} alt=""/>
                                         </div>
                                         <div>
                                             <p>FaceBook</p>
                                         </div>
                                     </div>
 
-                                    <div>
+                                    <div className="social-list-btn-container">
                                         <div>
-                                            <button>
+                                            <button className="social-add-btn">
                                                 <img src={Plus} alt=""/>
                                             </button>
                                         </div>
-                                        <div>
+                                        {/* <div>
                                             <button>
                                                 <img src={Dot} alt=""/>
                                             </button>
+                                        </div> */}
+                                    </div>
+                                </div>
+                                <div className="social-list">
+                                    <div className="social-list-image-container">
+                                        <div style={{marginRight: "10px"}}>
+                                            <img src={Facebook} alt=""/>
                                         </div>
+                                        <div>
+                                            <p>FaceBook</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="social-list-btn-container">
+                                        <div>
+                                            <button className="social-add-btn">
+                                                <img src={Plus} alt=""/>
+                                            </button>
+                                        </div>
+                                        {/* <div>
+                                            <button>
+                                                <img src={Dot} alt=""/>
+                                            </button>
+                                        </div> */}
+                                    </div>
+                                </div>
+                                <div className="social-list">
+                                    <div className="social-list-image-container">
+                                        <div style={{marginRight: "10px"}}>
+                                            <img src={Facebook} alt=""/>
+                                        </div>
+                                        <div>
+                                            <p>FaceBook</p>
+                                        </div>
+                                    </div>
+
+                                    <div className="social-list-btn-container">
+                                        <div>
+                                            <button className="social-add-btn">
+                                                <img src={Plus} alt=""/>
+                                            </button>
+                                        </div>
+                                        {/* <div>
+                                            <button>
+                                                <img src={Dot} alt=""/>
+                                            </button>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -67,14 +117,12 @@ const Profile = () => {
                     </div>
                 </div>
 
-
                 <div>
-                    hello world
-                    <Input label={"Dele"} type={"text"} />
+                    <FormDisplay />
                 </div>
 
                 <div>
-                    <ProfileStatic />
+                    <ProfileStaticDisplay />
                 </div>
             </div>
         </section>

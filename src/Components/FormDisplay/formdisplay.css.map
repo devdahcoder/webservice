@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACpB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,IAAI;EACX,eAAe,EAAE,UAAU;CAU9B;;AAdD,AAQQ,uBARe,CAOnB,IAAI,CACA,iBAAiB,CAAC;EACd,UAAU,EAAE,GAAG;EACf,KAAK,EAAE,KAAK;CACf",
+    "sources": [
+        "formdisplay.scss"
+    ],
+    "names": [],
+    "file": "formdisplay.css"
+}

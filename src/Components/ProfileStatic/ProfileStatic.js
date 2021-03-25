@@ -2,18 +2,24 @@ import React from 'react'
 import "./profilestatic.css";
 
 
-const ProfileStatic = () => {
+//imported components
+import Icon from "../Icon/Icon";
+
+
+
+const ProfileStatic = ({statist}) => {
+    console.log(statist)
     return (
         <div className="profile-static-container">
             <div className="profile-static-display">
-                <div>
-                    <img src="" alt=""/>
+                <div className="static-icon-container">
+                    <Icon stat={statist}/>
                 </div>
 
-                <div>
-                    <p>2,000</p>
+                <div className="static-detail-container">
+                    <p className="static-number">{}</p>
 
-                    <p>Likes delivered for all times</p>
+                    <p className="static-text">{}</p>
                 </div>
             </div>
         </div>

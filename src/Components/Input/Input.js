@@ -2,12 +2,12 @@ import React from 'react'
 import "./input.css"
 
 
-const Input = ({label, type}) => {
+const Input = ({type}) => {
     return (
         <div className="input-container">
             <div className="input-display">
-                <label htmlFor={label}>{label}</label>
-                <input type={type} name={label} id={label} />
+                <label htmlFor={type.type}>{type.label}</label>
+                <input type={type.type} name={type.type} id={type.type} />
             </div>
         </div>
     )

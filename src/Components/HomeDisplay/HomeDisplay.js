@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./homedisplay.css";
 
 //imported library
@@ -8,7 +8,7 @@ import { v4 as uuid } from 'uuid';
 import HomeItem from "../HomeItem/HomeItem";
 
 
-const posts = [
+const initialState = [
     {
         name: "Ali Pazani",
         content: "comment",
@@ -92,6 +92,8 @@ const posts = [
 ]
 
 const HomeDisplay = () => {
+
+    const [posts, setPosts] = useState(initialState)
 
     return (
         <div className="home-items-display-container">

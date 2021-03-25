@@ -1,0 +1,13 @@
+.statics-container .statics-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 35px;
+  color: #5F5F6E;
+}
+
+.statics-container .statics-display {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(1, 1fr);
+}
+/*# sourceMappingURL=profilestaticdisplay.css.map */
