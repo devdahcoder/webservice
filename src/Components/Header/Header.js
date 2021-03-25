@@ -40,7 +40,7 @@ const Header = () => {
             {/* <DropDown /> */}
             <div className="header-container">
                 <div className="logo-container">
-                    <Link to="/webservice">
+                    <Link to="/">
                         <img className="logo" src={Logo} alt="website logo"/>
                     </Link>
                 </div>
