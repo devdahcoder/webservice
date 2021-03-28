@@ -32,10 +32,10 @@ const CreateTask = () => {
                                     </div>
 
                                     <div className="social-media-checkbox-container">
-                                        <label className="payment-label">
-                                            <input type="checkbox" />
-                                            <span className="checkmark"></span>
-                                        </label>
+                                        
+                                        <input type="checkbox" name="" id=""/>
+                                        <label htmlFor=""></label>
+                                        
                                     </div>
                                 </div>
                                 
