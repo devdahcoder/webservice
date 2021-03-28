@@ -40,7 +40,7 @@ const initialState = [
     },
     {
         icon: Dollar,
-        number: "$ 123,344",
+        number: "$ 123, 344",
         description: "Real money spent",
         color: "#FFF6DE"
         
@@ -51,7 +51,6 @@ const initialState = [
 const ProfileStaticDisplay = () => {
     const [statists, setStatist] = useState(initialState);
 
-    console.log(statists);
     
     return (
         <div className="statics-container">

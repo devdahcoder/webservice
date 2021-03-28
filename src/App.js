@@ -10,6 +10,7 @@ import Profile from "./Pages/Profile/Profile";
 import News from "./Pages/News/News";
 import Faq from "./Pages/Faq/Faq";
 import Help from "./Pages/Help/Help";
+import CreateTask from "./Pages/CreateTask/CreateTask";
 
 //imported libraries
 import { Switch } from "react-router";
@@ -45,6 +46,7 @@ function App() {
             <Route path="/news" component={News} />
             <Route path="/faq" component={Faq} />
             <Route path="/help" component={Help} />
+            <Route path="/create-task" component={CreateTask} />
           </Switch>
             
         </div>

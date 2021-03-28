@@ -41,18 +41,23 @@
             }
 
             .home-header-btn-container {
-                button {
-                    padding: 0.6em;
-                    background: #2D2D3A;
-                    border-radius: 10px;
-                    border: 1px solid #2D2D3A;
-                    font-size: 16px;
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    text-align: center;
-                    outline: none;
-                    color: #FFFFFF;
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+
+                    button {
+                        padding: 0.6em;
+                        background: #2D2D3A;
+                        border-radius: 10px;
+                        border: 1px solid #2D2D3A;
+                        font-size: 16px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        outline: none;
+                        color: #FFFFFF;
+                    }
                 }
             }
             

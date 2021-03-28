@@ -32,9 +32,7 @@
 }
 
 .profile-container {
-    padding: 5em 0;
-    // width: 90%;
-    // margin: 0 auto;
+
 
     .profile-header-text {
         font-size: 22px;
@@ -49,14 +47,15 @@
         grid-gap: 3em;
 
         @include response(tablet) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media screen and (min-width: 1195px) {
+            grid-template-columns: 1fr 30em 1fr;
         }
 
         .profile-file-container {
             .profile-file-display {
-                // display: flex;
-                // // align-items: flex-start;
-                // flex-direction: column;
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
                 grid-gap: 10px;
@@ -70,12 +69,8 @@
                 }
 
                 .profile-file {
-                    // display: grid;
-                    // grid-template-columns: repeat(2, 1fr);
-                    // grid-gap: 10px;
                     padding: 0.5em;
                     display: flex;
-                    // align-items: center;
                     flex-direction: column;
                     background: #2D2D3A;
                     border-radius: 10px;
@@ -91,7 +86,6 @@
                             display: block;
                             border-radius: 10px;
                             width: 100%;
-                            // height: auto;
                             position: relative;
                             padding-bottom: 100%;
 
@@ -103,7 +97,6 @@
                                 position: absolute;
                                 top: 0;
                                 width: 100%;
-                                // z-index: 0;
                             }
                         }
                     }
@@ -112,7 +105,6 @@
                         margin-top: 0.8em;
 
                         button {
-                            // padding: 0.6em;
                             background: #2D2D3A;
                             border-radius: 10px;
                             border: 1px solid #414150;
@@ -132,9 +124,6 @@
                         line-height: 25px;
                     }
                     .social-display {
-                        // display: flex;
-                        // align-items: flex-start;
-                        // flex-direction: column;
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
                         grid-gap: 15px;
@@ -162,9 +151,6 @@
 
                                 .social-add-btn {
                                     border-radius: 50%;
-                                    // width: 1.5em;
-                                    // height: 1.5em;
-                                    
                                     @include svg-btn();
                                     padding: 0.2em;
                                     background: #4447E2;

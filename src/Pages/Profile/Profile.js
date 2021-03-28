@@ -10,8 +10,8 @@ import FormDisplay from "../../Components/FormDisplay/FormDisplay";
 import Plus from "../../Assets/images/plus.svg";
 import Dot from "../../Assets/images/dot.svg";
 import Facebook from "../../Assets/images/facebook.svg"
-// import Twitter from "../../Assets/images/twitter.svg"
-// import Vikonet from "../../Assets/images/vkonet.svg"
+import Twitter from "../../Assets/images/twitter.svg"
+import Vikonet from "../../Assets/images/vkonet.svg"
 
 const Profile = () => {
     return (
@@ -69,10 +69,10 @@ const Profile = () => {
                                 <div className="social-list">
                                     <div className="social-list-image-container">
                                         <div style={{marginRight: "10px"}}>
-                                            <img src={Facebook} alt=""/>
+                                            <img src={Twitter} alt=""/>
                                         </div>
                                         <div>
-                                            <p>FaceBook</p>
+                                            <p>Twitter</p>
                                         </div>
                                     </div>
 
@@ -92,10 +92,10 @@ const Profile = () => {
                                 <div className="social-list">
                                     <div className="social-list-image-container">
                                         <div style={{marginRight: "10px"}}>
-                                            <img src={Facebook} alt=""/>
+                                            <img src={Vikonet} alt=""/>
                                         </div>
                                         <div>
-                                            <p>FaceBook</p>
+                                            <p>VKontakte</p>
                                         </div>
                                     </div>
 

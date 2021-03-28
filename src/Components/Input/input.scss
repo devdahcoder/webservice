@@ -1,6 +1,6 @@
 .input-container {
     width: 100%;
-    padding: .3em 0;
+    padding: .5em 0;
 
     .input-display {
         width: 100%;
@@ -9,13 +9,8 @@
 
         label {
             font-weight: 500;
-            font-size: 14px;
-            line-height: 30px;
-            /* identical to box height, or 143% */
-
-            // display: flex;
-            // align-items: center;
-
+            font-size: 0.9rem;
+            padding-bottom: 0.8em;
             color: #5F5F6E;
         }
 

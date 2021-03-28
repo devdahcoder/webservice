@@ -5,8 +5,8 @@ import "./icon.css";
 const Icon = ({statist}) => {
     return (
         <div className="custom-icon-container">
-            <div style={{background: statist}} className="icon-display">
-                <img src={statist} alt=""/>
+            <div style={{background: `${statist.color}`}} className="icon-display">
+                <img src={statist.icon} alt=""/>
             </div>
         </div>
     )

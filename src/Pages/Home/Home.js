@@ -2,10 +2,13 @@ import React from 'react'
 import "./home.css"
 
 //imported icons 
-import Plus from "../../Assets/images/plus.svg"
+import Plus from "../../Assets/images/plus.svg";
 
 //imported components
-import HomeDisplay from "../../Components/HomeDisplay/HomeDisplay"
+import HomeDisplay from "../../Components/HomeDisplay/HomeDisplay";
+
+//imported libraries
+import { Link } from "react-router-dom";
 
 
 const Home = () => {
@@ -17,9 +20,11 @@ const Home = () => {
                         <p>Task List</p>
                     </div>
                     <div className="home-header-btn-container">
-                        <button>
-                            <span><img style={{verticalAlign: "middle", marginRight: "0.3em"}} src={Plus} alt=""/></span> Create task
-                        </button>
+                        <Link to="create-task">
+                            <button>
+                                <span><img style={{verticalAlign: "middle", marginRight: "0.3em"}} src={Plus} alt=""/></span> Create task
+                            </button>
+                        </Link>
                     </div>
                 </div>
 

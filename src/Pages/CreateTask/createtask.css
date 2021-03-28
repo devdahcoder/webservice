@@ -1,0 +1,159 @@
+.task-create-container {
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  animation: scale 600ms ease-in-out forwards;
+}
+
+@keyframes scale {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.07);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.task-create-container .task-create-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-create-container .task-create-display .task-create-header-container {
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background: #2D2D3A;
+  border-radius: 15px;
+  padding: 0.8em;
+  width: 100%;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-detail-display {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1rem;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-detail-display .social-media-checkbox-icon-container {
+  margin-right: 1em;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-detail-display .social-media-checkbox-icon-container .social-media-checkbox-icon {
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  background: 0 0;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  outline: none;
+  background: #EA4C89;
+  border-radius: 12px;
+  padding: 1em;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-container {
+  position: relative;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-container .payment-label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-container .payment-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border-radius: 50%;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-container .payment-label input:checked ~ .checkmark {
+  background: linear-gradient(270deg, #8743FF, #4136F1);
+  box-shadow: 0px 15px 30px rgba(20, 102, 204, 0.16);
+  border-radius: 50%;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-container .payment-label input:checked ~ .checkmark::after {
+  display: block;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-container .payment-label .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-container .payment-label .checkmark::after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-container label {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 25px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 25px;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-display .social-media-checkbox-display .social-media-checkbox-container label::after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 5px;
+  left: 5px;
+  opacity: 0;
+  position: absolute;
+  top: 6.5px;
+  transform: rotate(-45deg);
+  width: 10px;
+  opacity: 1;
+}
+/*# sourceMappingURL=createtask.css.map */

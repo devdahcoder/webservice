@@ -8,18 +8,18 @@ import Icon from "../Icon/Icon";
 
 
 const ProfileStatic = ({statist}) => {
-    console.log(statist)
+
     return (
         <div className="profile-static-container">
             <div className="profile-static-display">
                 <div className="static-icon-container">
-                    <Icon stat={statist}/>
+                    <Icon statist={statist}/>
                 </div>
 
                 <div className="static-detail-container">
-                    <p className="static-number">{}</p>
+                    <p className="static-number">{statist.number}</p>
 
-                    <p className="static-text">{}</p>
+                    <p className="static-text">{statist.description}</p>
                 </div>
             </div>
         </div>

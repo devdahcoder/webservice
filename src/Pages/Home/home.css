@@ -40,7 +40,12 @@
   line-height: 20px;
 }
 
-.home-container .home-display .home-header .home-header-btn-container button {
+.home-container .home-display .home-header .home-header-btn-container a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.home-container .home-display .home-header .home-header-btn-container a button {
   padding: 0.6em;
   background: #2D2D3A;
   border-radius: 10px;
