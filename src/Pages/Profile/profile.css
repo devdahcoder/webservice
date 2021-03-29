@@ -76,6 +76,7 @@
 
 .profile-container .profile-display .profile-file-container .profile-file-display .profile-file .profile-file-btn-container {
   margin-top: 0.8em;
+  position: relative;
 }
 
 .profile-container .profile-display .profile-file-container .profile-file-display .profile-file .profile-file-btn-container button {
@@ -87,7 +88,7 @@
   outline: none;
   color: #FFFFFF;
   width: 100%;
-  height: 2.8em;
+  padding: 1em 0;
 }
 
 .profile-container .profile-display .profile-file-container .profile-file-display .social-container .social-header {

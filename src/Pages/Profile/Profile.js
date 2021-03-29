@@ -31,6 +31,7 @@ const Profile = () => {
                             </div>
 
                             <div className="profile-file-btn-container">
+                                {/* <input type="file" name="" id=""/> */}
                                 <button>
                                     <span><img style={{verticalAlign: "middle", marginRight: "0.3em"}} src={Plus} alt=""/></span> Upload new Photo
                                 </button>
