@@ -103,10 +103,6 @@ const CreateTask = () => {
                                 </div>
                             </div>
 
-
-
-
-
                             <div className="execution-cost-container">
                                 <div className="execution-cost-list">
                                     <div className="execution-cost-list-header">

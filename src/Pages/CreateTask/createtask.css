@@ -42,17 +42,36 @@
   color: #5F5F6E;
 }
 
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-container {
+  margin: 1em 0;
+}
+
 .task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-social-media-container .select-social-media-display {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
   flex-direction: column;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-type-task-media-container {
+  margin: 1em 0;
+}
+
+.task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-type-task-media-container .select-task-type-media-display {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 900px) {
+  .task-create-container .task-create-display .task-create-form-container .task-create-form-display form .select-type-task-media-container .select-task-type-media-display {
+    flex-direction: row;
+  }
 }
 
 .task-create-container .task-create-display .task-create-form-container .task-create-form-display form .project-link-container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 1em 0;
 }
 
 .task-create-container .task-create-display .task-create-form-container .task-create-form-display form .project-link-container .project-link-header {
@@ -92,13 +111,20 @@
   flex-direction: column;
 }
 
+@media screen and (min-width: 900px) {
+  .task-create-container .task-create-display .task-create-form-container .task-create-form-display form .execution-cost-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .task-create-container .task-create-display .task-create-form-container .task-create-form-display form .execution-cost-container .execution-cost-list {
   display: flex;
   flex-direction: column;
   font-size: 14px;
   line-height: 20px;
   color: #5F5F6E;
-  /* identical to box height, or 143% */
+  margin: 1em;
 }
 
 .task-create-container .task-create-display .task-create-form-container .task-create-form-display form .execution-cost-container .execution-cost-list .execution-cost-list-subheader {

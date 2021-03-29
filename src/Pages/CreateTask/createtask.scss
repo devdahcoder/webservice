@@ -1,4 +1,22 @@
+@mixin response($size) {
+    // @if $size == phone {
+    //     @media screen and (max-width: 600px) {
+    //         @content
+    //     }
+    // }
 
+    @if $size == tablet {
+        @media screen and (min-width: 900px) {
+            @content
+        }
+    }
+
+    @if $size == desktop {
+        @media screen and (min-width: 1200px) {
+            @content
+        }
+    }
+}
 
 
 
@@ -54,12 +72,34 @@
                     }
 
                     .select-social-media-container {
-                        
+                        // border: 1px solid red;
+                        margin: 1em 0;
                         .select-social-media-display {
                             display: flex;
                             align-items: center;
-                            flex-wrap: wrap;
+                            // flex-wrap: wrap;
                             flex-direction: column;
+                            // border: 1px solid red;
+
+                            @include response(tablet) {
+                                
+                            }
+                        }
+                    }
+
+                    .select-type-task-media-container {
+                        // border: 1px solid red;
+                        margin: 1em 0;
+                        .select-task-type-media-display {
+                            display: flex;
+                            // align-items: center;
+                            // flex-wrap: wrap;
+                            flex-direction: column;
+                            // border: 1px solid red;
+                            @include response(tablet) {
+                                flex-direction: row;
+
+                            }
                         }
                     }
 
@@ -67,6 +107,8 @@
                         width: 100%;
                         display: flex;
                         flex-direction: column;
+                        margin: 1em 0;
+                        // border: 1px solid red;
 
                         .project-link-header {
                             font-size: 1rem;
@@ -105,8 +147,11 @@
                     .execution-cost-container {
                         display: flex;
                         flex-direction: column;
-                        // align-items: center;
-                        // justify-content: space-between;
+                        
+                        @include response(tablet) {
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
 
                         .execution-cost-list {
                             display: flex;
@@ -114,10 +159,7 @@
                             font-size: 14px;
                             line-height: 20px;
                             color: #5F5F6E;
-                            /* identical to box height, or 143% */
-                            
-                            // display: flex;
-                            // align-items: center;
+                            margin: 1em;
 
                             .execution-cost-list-subheader {
                                 padding: 0.8em 0;
